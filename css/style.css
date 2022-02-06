@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
+
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+.container{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-white{
+    color: blanchedalmond;
+}
+.text-black{
+    color: #333333;
+}
+.text-gray{
+    color: #555555;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+.btn-primary:hover{
+    background-color: rgb(211, 164, 180);
+}
+
+.header{
+    position: relative;
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('../img/train.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    padding: 1rem;
+    
+}
+.navbar a{
+    color: white;
+}
+.navbar .logo{
+    width: 60%;
+    float: left;
+    font-size: 3.5rem;
+}
+.navbar .nav-items{
+    float: left;
+    width: 40%;
+    margin-top: 1rem;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+    
+}
+.navbar a:link, .navbar a:visited{
+    color: white;
+}
+.navbar a:hover{
+    border-bottom: 1px solid blanchedalmond;
+}
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+}
+.header-content h1{
+    text-transform: uppercase;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+.showcase{
+    background: blanchedalmond;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    /* border: 2px solid greenyellow; */
+    background-color: rgb(212, 188, 179);
+    box-shadow: 0px 0px 20px 0px rgb(224, 189, 189);
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row1 .text-box, .row2 .img-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    /* border: 2px solid green; */
+    height: 100%;
+}
+.row .text-box{
+    /* border: 2px solid blueviolet; */
+    padding: 4rem;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.features{
+    padding: 10rem 0;
+}
+.box-wrapper{
+    box-shadow: 0px 0px 20px 0px rgb(224, 189, 189);
+}
+.box{
+    width: 33.3333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    /* border: 2px solid green; */
+}
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box1, .box3{
+    background-color: rgba(71, 64, 64, 0.2);
+}
+.box2{
+    background-color: blanchedalmond;
+}
+.footer{
+    background-color: rgb(212, 188, 179);
+    text-align: center;
+    padding: 5rem;
+}
+.social-media-links i{
+    margin: 2rem;
+}
+.bg-dark{
+    background-color: rgb(221, 195, 184);
+}
+.about{
+    padding: 3rem 0;
+}
+.about-heading{
+    border-bottom: 5px solid rgb(221, 195, 184);
+}
+.about-wrapper{
+    /* border: 2px solid green; */
+    text-align: center;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+    padding: 3rem;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+    padding: 5rem;
+}
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count-item span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(236, 45, 45);
+}
+.count-item p{
+    font-weight:500;
+    color: #333333;
+    padding-bottom: 2rem;
+}
+.cta-banner{
+    background: rgb(221, 195, 184);
+    box-shadow: 0px 5px 20px 0px #333;
+
+}
+.cta-banner-left{
+    width: 70%;
+    float: left;
+    text-align: center;
+    padding-top: 3rem;
+}
+.cta-banner-right{
+    width: 30%;
+    float: right;
+    text-align: center;
+    padding: 2rem;
+}
+.btn-cta{
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 1rem;
+    color: #333333;
+    border-radius: 10em;
+}
+.btn-cta:hover{
+    color: #e63946;
+}
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.contact-form{
+    padding: 5rem 0;
+    background: #f1eded;
+}
+.form-wrapper .company-address{
+    background: #fff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+    height: 750px;
+}
+.form-wrapper .address-group{
+    margin-bottom: 2rem;
+}
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: right;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrapper .form{
+    background: #fff;
+    width: 49%;
+    float: right;
+    font-size: 1.6rem;
+    padding: 1rem;
+    height: 750px;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid rgb(221, 195, 180);
+    width: 100%;
+}
+.form-wrapper label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: '*';
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color: rgb(221, 195, 180) ;
+    cursor: pointer;
+}
+@media (max-width : 500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(71, 64, 64, 0.2);
+    }
+    .features .box2, .features .box3 {
+        margin-top: 3rem;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .cta-banner-left, .cta-banner-right{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+    .form-wrapper .company-address, .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .contact-form{
+        background-color: white;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px){
+    html{
+        font-size:8px;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(71, 64, 64, 0.2);
+    }
+    .features .box2, .features .box3 {
+        margin-top: 3rem;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .cta-banner-left, .cta-banner-right{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+    .form-wrapper .company-address, .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .contact-form{
+        background-color: white;
+    }
+}
+@media (min-width:769px) and (max-width:1200px) {
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (orientation: landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
